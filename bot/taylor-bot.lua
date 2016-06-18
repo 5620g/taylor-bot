@@ -233,7 +233,7 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {68747297},--Sudo users
+    sudo_users = {189308877},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[Taylor Team v4
     Taylor Team and Taylor Bot Anti spam / anti link
@@ -465,6 +465,7 @@ will return group ban list
 ]],
 	help_text_super =[[
 راهنمای سوپر گروه دو زبان
+
 💢!info
 اطلاعات
 
@@ -598,6 +599,7 @@ will return group ban list
 💢!del
 حذف پیام با ریپلی
 از کارکترهای #!/ پشتیبانی می کند
+
 Channel:@MonsterTGbot
 
 ]],
