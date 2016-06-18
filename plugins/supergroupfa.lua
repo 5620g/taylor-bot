@@ -193,7 +193,7 @@ local function lock_group_links(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_link'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'ارسال لینک و تبلیغات قفل شد'
+    return '🔒ارسال لینک و تبلیغات قفل شد'
   end
 end
 
