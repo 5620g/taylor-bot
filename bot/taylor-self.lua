@@ -233,7 +233,7 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {68747297},--Sudo users
+    sudo_users = {189308877},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[Taylor Team v4
     Taylor Team and Taylor Bot Anti spam / anti link
@@ -464,146 +464,143 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+راهنمای سوپر گروه دو زبان
 
-!info
-Displays general info about the SuperGroup
+💢!info
+اطلاعات
 
-!admins
-Returns SuperGroup admins list
+💢!admins
+لیست ادمین
 
-!owner
-Returns group owner
+💢!support
+دعوت سازنده ربات در صورت وجود مشکل 
+فقط در صورت وجود مشکل در گروه سازنده را دعوت کنید در غیر این صورت گروه شما حذف خواهد شد 
 
-!modlist
-Returns Moderators list
+💢!owner
+نمایش مدیر اصلی
 
-!bots
-Lists bots in SuperGroup
+💢!msgrem (عددی زیر 100)
+حذف پیام های سوپرگروه به صورت عددی
 
-!who
-Lists all users in SuperGroup
+💢!weather نام شهر
+دریافت آب وهوای یک شهر
 
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
+💢!modlist
+نمایش لیست مدیران فرعی
 
-!ban
-Bans user from the SuperGroup
+💢!insta (یوزرنیم اینستا)
+سرچ کردن یک یوزرنیم در اینستاگرام
 
-!unban
-Unbans user from the SuperGroup
+💢!bots
+لیست بوت های گروه
 
-!id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
+💢!wikifa (متن)
+جستجوی یک متن در ویکی پدیا 
 
-!id from
-Get ID of user message is forwarded from
+💢!azan (شهر)
+دریافت وقت اذان یک شهر
 
-!kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
+💢!share 
+دریافت اطلاعات سازنده
 
-!setowner
-Sets the SuperGroup owner
+💢!webshot (آدرس سایت)
+اسکرین شات گرفتن از یک سایت
 
-!promote [username|id]
-Promote a SuperGroup moderator
+💢!supportlink
+دریافت لینک گروه ساپورت ربات
 
-!demote [username|id]
-Demote a SuperGroup moderator
+💢!qr
+دریافت هر چیزی به صورت بارکد
 
-!setname
-Sets the chat name
+💢!who
+لیست افراد گروه
 
-!setphoto
-Sets the chat photo
+💢!gps (شهر) (کشور)
+دریافت مکان مورد نظر از گوگل
 
-!setrules
-Sets the chat rules
+💢!block
+بلاک از سوپر گروه
 
-!setabout
-Sets the about section in chat info(members list)
+💢!ban
+بن کردن
 
-!save [value] <text>
-Sets extra info for chat
+💢!unban
+ان بن کردن
 
-!get [value]
-Retrieves extra info for chat by value
+💢!id
+ایدی 
 
-!newlink
-Generates a new group link
+💢!id from
+ایدی مسیج فروارد شده
 
-!link
-Retireives the group link
+💢!kickme
+حذف خود
 
-!rules
-Retrieves the chat rules
+💢!setowner
+تنظیم مدیر اصلی
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
+💢!promote [username|id]
+تنظیم مدیر فرعی
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
+💢!demote [username|id]
+پاک کردن مدیر فرعی
 
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+💢!setname
+تنظیم اسم گروه
 
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
+💢!setphoto
+تنظیم عکس گروه
 
-!setflood [value]
-Set [value] as flood sensitivity
+💢!setrules
+تنظیم قوانین گروه
 
-!settings
-Returns chat settings
+💢!setabout
+تنظیم در باره ی گروه
 
-!muteslist
-Returns mutes for chat
+💢!newlink
+لینک جدید
 
-!muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+💢!link
+دریافت لینک
 
-!mutelist
-Returns list of muted users in chat
+💢!sticker متن
+تبدیل متن به استیکر
 
-!banlist
-Returns SuperGroup ban list
+💢!rules
+نمایش قوانین
 
-!clean [rules|about|modlist|mutelist]
+💢!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+قفل مواردی که در بالا ذکر شده
 
-!del
-Deletes a message by reply
+💢!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+ان قفل مواردی که در بالا ذکر شده
 
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+💢!mute [all|audio|gifs|photo|video|service]
+قفل چت
 
-!res [username]
-Returns users name and id by username
+💢!unmute [all|audio|gifs|photo|video|service]
+باز کردن چت
 
+💢!setflood [value]
+تنظیم حساسیت 
 
-!log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
+💢!settings
+تنظیمات گروه
 
-**You can use "#", "!", or "/" to begin all commands
+💢!mutelist
+لیست موت شدگان
 
-*Only owner can add members to SuperGroup
-(use invite link to invite)
+💢!banlist
+لیست بن شدگان
 
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
+💢!clean [rules|about|modlist|mutelist]
+پاک کردن مواردی که در بالا ذکر شده
 
-*Only owner can use res, setowner, promote, demote, and log commands
+💢!del
+حذف پیام با ریپلی
+از کارکترهای #!/ پشتیبانی می کند
 
+Channel:@MonsterTGbot
 ]],
   }
   serialize_to_file(config, './data/config.lua')
