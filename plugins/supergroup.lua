@@ -1964,7 +1964,7 @@ local function run(msg, matches)
 		end
 
 		if matches[1] == 'help' and not is_owner(msg) then
-			text = "Send /superhelp \n @Taylor_Team \n @negative_officiall"
+			text = "Send /superhelp \n @monsterTGbot \n @TAHAJK"
 			reply_msg(msg.id, text, ok_cb, false)
 		elseif matches[1] == 'help' and is_owner(msg) then
 			local name_log = user_print_name(msg.from)
