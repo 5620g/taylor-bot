@@ -228,6 +228,22 @@ function create_config( )
     "get",
     "broadcast",
     "invite",
+    "support",
+    "feedback",
+    "welcome",
+    "slm",
+    "time",
+    "times",
+    "wtt",
+    "qr",
+    "rmsg",
+    "setwlc",
+    "dic",
+    "sendp",
+    "savep",
+    "weather",
+    "info",
+    "sms",
     "all",
     "leave_ban",
 	"supergroup",
@@ -600,6 +616,11 @@ will return group ban list
 🎈!azan (شهر)
 دریافت وقت اذان یک شهر
 
+💢!support
+وارد شدن سازنده ربات  به گروه
+
+🎈!feedback (متن)
+ارسال پیام به سازنده
 
 #", "!", or "/" **میتوانید از "
 اول همه دستورات استفاده کنید
