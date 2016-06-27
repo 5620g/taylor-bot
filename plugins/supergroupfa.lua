@@ -1964,7 +1964,7 @@ local function run(msg, matches)
 		end
 
 		if matches[1] == 'راهنما' and not is_owner(msg) then
-			text = "دستور راهنما فقط برای ادمین کار میکند : \n ادمین : \n @negative_officiall"
+			text = "دستور راهنما فقط برای ادمین کار میکند : \n ادمین : \n @monsterTGBOT"
 			reply_msg(msg.id, text, ok_cb, false)
 		elseif matches[1] == 'راهنما' and is_owner(msg) then
 			local name_log = user_print_name(msg.from)
