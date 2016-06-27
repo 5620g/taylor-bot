@@ -243,6 +243,7 @@ function create_config( )
     "savep",
     "weather",
     "info",
+    "nerkh",
     "sms",
     "all",
     "leave_ban",
