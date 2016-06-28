@@ -15,8 +15,8 @@ function run(msg, matches)
 
   end
 return {
-  description = "shows نرخ", 
-  usage = "نرخ : return sudousers",
+  description = "shows nerkh", 
+  usage = "nerkh: return sudousers",
   patterns = {
     "^[Nn]erkh$",
 
