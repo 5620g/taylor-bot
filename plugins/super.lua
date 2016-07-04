@@ -122,7 +122,7 @@ local channel_id = "👤ایدی: "..result.peer_id.."\n"
 if result.username then
 	channel_username = "یوزرنیم: @"..result.username
 else
-	channel_username = "@Part_Team"
+	channel_username = "@team_monster"
 end
 local text = title..admin_num..user_num..kicked_num..channel_id..channel_username
     send_large_msg(cb_extra.receiver, text)
@@ -1778,7 +1778,7 @@ local function run(msg, matches)
 				resolve_username(username,  callbackres, cbres_extra)
 			else
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup ID")
-				return "👥نام سوپر گروه:" ..string.gsub(msg.to.print_name, "_", " ").. "\n👥ایدی سوپر گروه:"..msg.from.id.."\n👤ایدی کاربری:"..msg.to.id.."\n👤یوزرنیم:@"..msg.from.username.."\n@Part_Team"
+				return "👥نام سوپر گروه:" ..string.gsub(msg.to.print_name, "_", " ").. "\n👥ایدی سوپر گروه:"..msg.from.id.."\n👤ایدی کاربری:"..msg.to.id.."\n👤یوزرنیم:@"..msg.from.username.."\n
 			end
 		end
 
@@ -1829,7 +1829,7 @@ local function run(msg, matches)
 				return "شما میتوانید بادستور[لینک جدید]لینک جدید بسازید"
 			end
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-			return "نام گروه:[" ..string.gsub(msg.to.print_name, "_", " ").. "]\nلینک سوپرگروه:\n"..group_link.."\n@Part_Team"
+			return "نام گروه:[" ..string.gsub(msg.to.print_name, "_", " ").. "]\nلینک سوپرگروه:\n"..group_link.."\n
 		end
 
 		if matches[1] == "invite" and is_sudo(msg) then
