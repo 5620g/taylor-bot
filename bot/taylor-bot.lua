@@ -224,7 +224,7 @@ function create_config( )
     "arabic_lock",
     "set",
     "pl",
-    "supergroupfa",
+    "super",
     "get",
     "broadcast",
     "invite",
@@ -247,7 +247,7 @@ function create_config( )
     "sms",
     "all",
     "leave_ban",
-	"supergroup",
+	"ss",
 	"whitelist",
 	"msg_checks",
 	
