@@ -250,6 +250,7 @@ function create_config( )
 	"ss",
 	"whitelist",
 	"msg_checks",
+	"dd",
 	
     },
     sudo_users = {189308877},--Sudo users
