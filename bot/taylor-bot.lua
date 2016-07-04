@@ -249,7 +249,8 @@ function create_config( )
     "leave_ban",
 	"supergroup",
 	"whitelist",
-	"msg_checks"
+	"msg_checks",
+	
     },
     sudo_users = {189308877},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -482,156 +483,146 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-💢!info
-دریافت اطلاعات گروه و شما
+دستورات سوپر گروه ربات مانستر
 
-🎈!admins
-نمایش ادمین های سوپر گروه
+info
+🌟نشان دادن مشخصات شما
+*درصورت ریپلای مشخصات فرد را نشان میدهد
 
-💢!owner
-نمایش صاحب گروه
+owner
+🌟نشان دادن صاحب گروه
 
-🎈!modlist
-نمایش لیست مدیران
+modlist
+🌟نشان دادن مدهای گروه
 
-💢!bots
-نمایش لیست ربات های گروه
+block
+🌟حذف یک کاربر ازسوپر گروه
+*افزودن به کاربر به لیست مسدود شده ها*
 
-🎈!who
-لیست تمامی اعضای گروه
+ban
+🌟بن کردن فرد از گروه
 
-💢!block
-اخراج فرد از سوپر گروه
-*اضافه شدن فرد به بلاک لیست*
+unban
+🌟انبن کردن فرد از گروه
 
-🎈!ban
-مسدود کردن فرد از سوپر گروه
+kickme
+🌟کیک کردن خودتا از سوپر گروه
+*باید توسط صاحب گروه انبلاک شوید یا با پیام جوین برگردید*
 
-💢!unban
-حذف مسدود فرد از سوپر گروه
+setowner
+🌟تنظیم صاحب گروه
 
-🎈!id
-نمایش ایدی سوپر گروه
-*برای نمایش ایدی یک یوزر: !id @username ویا ریپلای !id*
+promote [username|id]
+🌟ارتقا یک فرد به مد
 
-💢!id from
-دریافت ایدی فردی که پیام از او فوروارد شده
+demote [username|id]
+🌟تنزل یک فرد به یوزر
 
-🎈!kickme
-اخراج شما از سوپر گروه
-*Must be unblocked by owner or use join by pm to return*
+setname
+🌟تنظیم نام گروه
 
-💢!setowner
-تنظیم صاحب گروه
+setphoto
+🌟تنظیم عکس گروه
 
-🎈!promote [username|id]
-تنظیم مدیر برای سوپر گروه
+setrules
+🌟تنظیم قوانین گروه
 
-💢!demote [username|id]
-خذف ک مدیر از سوپر گروه
+setabout
+🌟تنظیم درباره گروه(در لیست اعضا)
 
-🎈!setname
-تنظیم نام سوپر گروه و قفل آن
+save [value] <text>
+🌟تنظیم متن برای مقداری خاص
 
-💢!setphoto
-تنظیم عکس گروه و قفل آن
+get [value]
+🌟دریافت متن از ارسال مقدار
 
-🎈!setrules
-تنظیم قوانین گروه
+link
+🌟دریافت لینک گروه
 
-💢!setabout
-تنظیم بیو در سوپر گروه
+rules
+🌟دریافت قوانین
 
-🎈!save [value] <text>
-ذخیره در حافظه
+lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|video|share|photo|join|gif|fwd|english|antiemoji|chat|audio|adstag|antifosh|strict]
+🌟قفل تنظیمات گروه
 
-💢!get [value]
-نمایش متن ذخیره شده
+unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|video|share|photo|join|gif|fwd|english|antiemoji|chat|audio|adstag|antifosh|strict]
+🌟بازکردن تنظیمات گروه
 
-🎈!newlink
-ساخت لینک جدید (ربات باید سازنده گروه باشد)
+mute [all|audio|gifs|photo|video|service]
+🌟قفل مواد ارسالی کاربران
+*یک مواد موت شده باعث میشود آن مواد تنها حذف شود
 
-💢!link
-نمایش لینک سوپر گروه
+unmute [all|audio|gifs|photo|video|service]
+🌟بازکردن مواد ارسالی کاربران
 
-🎈!rules
-نمایش قوانین سوپر گروه
+setflood [value]
+🌟تنظیم مقدار حساسیت اسپم
 
-💢!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-قفل برخی تنظیمات سوپر گروه
+settings
+🌟دریافت تنظیمات گروه
 
+muteslist
+🌟دریافت مواد قفل شده در گروه
 
-🎈!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-باز کردن برخی تنظیمات سوپر گروه
+muteuser [username]
+🌟خفه کردن یک فرد در گروه
 
+mutelist
+🌟دریافت لیست کاربران خفه شده
 
-💢!mute [all|audio|gifs|photo|video|service]
-بی صدا کردن برخی رسانه ها در سوپر گروه
-*گزینه بی صدا شده در صورت قرار گرفتن در گروه پاک میشود
+banlist
+🌟دریافت لیست بن شده گروه
 
-🎈!unmute [all|audio|gifs|photo|video|service]
-با صدا کرد برخی رسانه ها در سوپر گروه
-*گزینه بی صدا شده در صورت قرار گرفتن در گروه پاک نمیشود
+clean [rules|about|modlist|mutelist]
+🌟پاک کردن تنظیمات به طور کلی
 
-💢!setflood [value]
-تنظیم حساسیت به اسپم در سوپر گروه
+date
+🌟دریافت تاریخ و ساعت
 
-🎈!settings
-نمایش تنظیمات سوپر گروه
+write [text]
+🌟نوشتن متن به صورت های مختلف
 
-💢!muteslist
-نمایش رسانه های بی صدا و باصدا
+feedback [msg]
+🌟ارسال نظر شما به مدیران
 
-🎈!muteuser [username]
-بی صدا کردن یک فرد
-*فرد بی صدا شده تمامی پیام هایش پاک میشود
-*فقط صاحب میتواند بی صدا کند/فقط مدیر و صاحب میتواند از حالت بی صدا در بیاورد
+map (loc/map/view/link/gps) [name]
+🌟دریافت نقشه محلی خاص
 
-💢!mutelist
-نمایس لیست افراد بی صدا
+weather [name]
+🌟نشان دادن اب هوای منطقه ای خاص
 
-🎈!banlist
-نمایش لیست افراد  بن شده
+web [link]
+🌟اسکرین شات از صفحه وب دلخواه
 
-💢!clean [rules|about|modlist|mutelist]
-پاک کردن قوانین/درباره/مدیران/لیست بی صدا
+aparat [name]
+🌟جستجو در آپارات
 
-🎈!del
-دلیت کردن یک پیام با ریپلای بر روی آن
+addword
+🌟افزودن کلمه جدید به فیلترینگ
 
-💢!public [yes|no]
-تنظیم حالت گروه 
+rmsg [num]
+🌟حذف پیام های چت{حداکثر 90عدد}
 
-🎈!res [username]
-دریافت اطلاعات یک یوزرنیم
+sticker [text]
+🌟ساخت استیکر جدید با متن
 
-💢!log
-دریافت اطلاعات گروه
+sudoers
+🌟نشان دادن سودوهای بات
 
-🎈Nerkh
-نرخ گروه ها
+tagall [msg]
+🌟صدا کردن تمامی افراد با تگ
 
-💢!dic (متن)
-دیکشنری
+vc [text]
+🌟تبدیل متنی به صدا
+addp
+adde
+🌟دعوت سودو اصلی
+🌟دعوت سودو دوم
 
-🎈!azan (شهر)
-دریافت وقت اذان یک شهر
+**تمامی دستورات بدون نیاز به "/"و"#"و"!" میباشد
+*صاحبان گروه تنها میتوانند دستورات اصلی را اجرا کنند
 
-💢!support
-وارد شدن سازنده ربات  به گروه
-
-🎈!feedback (متن)
-ارسال پیام به سازنده
-
-💢!arz
-دریافت قیمت ارز 
-
-#", "!", or "/" **میتوانید از "
-اول همه دستورات استفاده کنید
-
-🔥در کانال ما گروه های رایگان قرار میدیم برای دریافت جوین کنید🔥
-Channel:@team_monster
-
+📚ربات مانستر ورژن 7.1📚
 ]],
   }
   serialize_to_file(config, './data/config.lua')
