@@ -224,39 +224,19 @@ function create_config( )
     "arabic_lock",
     "set",
     "pl",
-    "super",
     "get",
     "broadcast",
     "invite",
-    "support",
-    "feedback",
-    "welcome",
-    "slm",
-    "time",
-    "times",
-    "wtt",
-    "qr",
-    "rmsg",
-    "setwlc",
-    "dic",
-    "sendp",
-    "savep",
-    "weather",
-    "info",
-    "nerkh",
-    "sms",
     "all",
     "leave_ban",
-	"ss",
+	"supergroup",
 	"whitelist",
-	"msg_checks",
-	"dd",
-	
+	"msg_checks"
     },
     sudo_users = {189308877},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[monster Team v4
-    monster Anti spam / anti link
+    about_text = [[monster v4
+    monster TM and monster Bot Anti spam / anti link
     
     website : 
     monster.ir  ❤️
@@ -272,358 +252,344 @@ function create_config( )
     @team_monster ❤️
 ]],
     help_text_realm = [[
-Realm Commands:
+دستورات ریلم:
 
-!creategroup [Name]
-Create a group
+💢!creategroup [Name]
+ساخت گروه
 
-!createrealm [Name]
-Create a realm
+🎈!createrealm [Name]
+ساخت ریلم
 
-!setname [Name]
-Set realm name
+💢!setname [Name]
+تنظیم نام
 
-!setabout [group|sgroup] [GroupID] [Text]
-Set a group's about text
+🎈!setabout [group|sgroup] [GroupID] [Text]
+تنظیم درباره یک گروه
 
-!setrules [GroupID] [Text]
-Set a group's rules
+💢!setrules [GroupID] [Text]
+تنظبم قوانین یک گروه
 
-!lock [GroupID] [setting]
-Lock a group's setting
+🎈!lock [GroupID] [setting]
+فقط تنظیمات یک گروه
 
-!unlock [GroupID] [setting]
-Unock a group's setting
+💢!unlock [GroupID] [setting]
+باز کردن تنظبمات یک گروه
 
-!settings [group|sgroup] [GroupID]
-Set settings for GroupID
+🎈!settings [group|sgroup] [GroupID]
+تنظیم برخی تنظیمات برای یک گروه
 
-!wholist
-Get a list of members in group/realm
+💢!wholist
+دریافت لیست ممبر های گروه
 
-!who
-Get a file of members in group/realm
+🎈!who
+دریافت فایل ممبر های گروه
 
-!type
-Get group type
+💢!type
+نمایش حالت گروه
 
-!kill chat [GroupID]
-Kick all memebers and delete group
+🎈!kill chat [GroupID]
+دلیت همه اعضای گروه
 
-!kill realm [RealmID]
-Kick all members and delete realm
+💢!kill realm [RealmID]
+دلیت همه اعضای ریلم
 
-!addadmin [id|username]
-Promote an admin by id OR username *Sudo only
+🎈!addadmin [id|username]
+اضافه کردن ادمین*فقط سودو
 
-!removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
+💢!removeadmin [id|username]
+حذف کردن ادمین *فقط سودو
 
-!list groups
-Get a list of all groups
+🎈!list groups
+لیست همه گروه ها
 
-!list realms
-Get a list of all realms
+💢!list realms
+لیست همه ریلم ها
 
-!support
-Promote user to support
+🎈!support
+دیافت لینک ساپورت
 
-!-support
-Demote user from support
+💢!-support
+حذف فرد از ساپورت
 
-!log
-Get a logfile of current group or realm
+🎈!log
+دریافت اطلاعات اکانت ربات
 
-!broadcast [text]
-!broadcast Hello !
-Send text to all groups
-Only sudo users can run this command
+💢!broadcast [text]
+💢!broadcast Hello !
+سند تو آل
+فقط سودو 
 
-!bc [group_id] [text]
-!bc 123456789 Hello !
-This command will send text to [group_id]
-
-
-**You can use "#", "!", or "/" to begin all commands
+🎈!bc [group_id] [text]
+🎈!bc 123456789 Hello !
+فرستادن یک متن به گروه خاص 
 
 
-*Only admins and sudo can add bots in group
+**شما میتوانید از"#", "!", or "/" برای دستورات استفاده کنین!
 
 
-*Only admins and sudo can use kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings commands
+*فقط ادمین و سودو میتونه ربات رو اد بده توی گروه ها!
 
-*Only admins and sudo can use res, setowner, commands
+
+*فقط ادمین میتونه استفاده کنه از دستورات kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings 
+
+*فقط ادمین و سودو میتونه از دستورات res, setowner, استفاده کنه!
 ]],
     help_text = [[
-Commands list :
+لیست دستورات:
 
-!kick [username|id]
-You can also do it by reply
+💢!kick [username|id]
+اخراج فرد از گروه
 
-!ban [ username|id]
-You can also do it by reply
+🎈!ban [ username|id]
+بلاک کردن فرد از گروه
 
-!unban [id]
-You can also do it by reply
+💢!unban [id]
+آنبلاک کردن فرد از گروه
+🎈!who
+لیست اعضا
 
-!who
-Members list
+💢!modlist
+لیست مدیران
 
-!modlist
-Moderators list
+🎈!promote [username]
+انتخاب مدیر جدید
 
-!promote [username]
-Promote someone
+💢!demote [username]
+حذف مدیر انتخابی
 
-!demote [username]
-Demote someone
+🎈!kickme
+اخراج شما
 
-!kickme
-Will kick user
+💢!about
+نمایش درباره گروه
 
-!about
-Group description
+🎈!setphoto
+تنظیم عکس گروه و قفل آن
 
-!setphoto
-Set and locks group photo
+💢!setname [name]
+تنظیم نام گروه و قفل آن
 
-!setname [name]
-Set group name
+🎈!rules
+نمایش قوانین
 
-!rules
-Group rules
+💢!id
+نمایش آیدی
 
-!id
-return group id or user id
+🎈!help
+نمایش لیست راهنما
 
-!help
-Returns help text
+💢!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+قفل برخی تنظیمات گروه
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Kick user if Right To Left Char. is in name*
+🎈!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+باز کردن برخی تنظیمات گروه
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Kick user if Right To Left Char. is in name*
+💢!mute [all|audio|gifs|photo|video]
+بی صدا کردن برخی فایل های ارسالی
 
-!mute [all|audio|gifs|photo|video]
-mute group message types
-*If "muted" message type: user is kicked if message type is posted 
+🎈!unmute [all|audio|gifs|photo|video]
+با صدا کردن برخی فایل های ارسالی
 
-!unmute [all|audio|gifs|photo|video]
-Unmute group message types
-*If "unmuted" message type: user is not kicked if message type is posted 
+💢!set rules <text>
+تنظیم قوانین 
 
-!set rules <text>
-Set <text> as rules
+🎈!set about <text>
+تنظیم درباره
 
-!set about <text>
-Set <text> as about
+💢!settings
+نمایش تنظیمات گروه
 
-!settings
-Returns group settings
+🎈!muteslist
+نمایش لیست رسانه های بی صدا و باصدا
 
-!muteslist
-Returns mutes for chat
+💢!muteuser [username]
+بی صدا کردن یک یوزر
 
-!muteuser [username]
-Mute a user in chat
-*user is kicked if they talk
-*only owners can mute | mods and owners can unmute
+🎈!mutelist
+نمایش لیست بی صدا شده ها
 
-!mutelist
-Returns list of muted users in chat
+💢!newlink
+ساخت لینک جدید(ربات باید سازنده باشد)
 
-!newlink
-create/revoke your group link
+🎈!link
+نمایش لینک گروه
 
-!link
-returns group link
+💢!owner
+نمایش ایدی صاحب گروه
 
-!owner
-returns group owner id
+🎈!setowner [id]
+تنظیم صاحب برای گروه
 
-!setowner [id]
-Will set id as owner
+💢!setflood [value]
+تنظیم حساسیت به اسپم
 
-!setflood [value]
-Set [value] as flood sensitivity
+🎈!stats
+نمایش اطلاعات گروه
 
-!stats
-Simple message statistics
+💢!save [value] <text>
+ذخیره یک متن در حافظه
 
-!save [value] <text>
-Save <text> as [value]
+🎈!get [value]
+نمایش متن ذخیره شده
 
-!get [value]
-Returns text of [value]
+💢!clean [modlist|rules|about]
+پاک کردن مدیران/قوانین/درباره
 
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+🎈!res [username]
+دریافت اطلاعات یوزرنیم
 
-!res [username]
-returns user id
-"!res @username"
+💢!log
+نمایش اطلاعات گروه
 
-!log
-Returns group logs
+🎈!banlist
+نمایش لیست بن شده ها
 
-!banlist
-will return group ban list
-
-**You can use "#", "!", or "/" to begin all commands
+**شما میتوانید از شکلک های"#", "!", or "/" اول همه دستورات استفاده کنین!
 
 
-*Only owner and mods can add bots in group
+*فقط ادمین و سودو میتونن ربات رو توی گروه اد کنن!
 
 
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+*فقط ادمین میتونه استفاده کنه از دستورات kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about و settings 
 
-*Only owner can use res,setowner,promote,demote and log commands
+*فقط ادمین و سودو میتونه از دستورات res, setowner, استفاده کنه!
 
 ]],
 	help_text_super =[[
-دستورات سوپر گروه ربات مانستر
+SuperGroup Commands:
 
-info
-🌟نشان دادن مشخصات شما
-*درصورت ریپلای مشخصات فرد را نشان میدهد
+💢!info
+دریافت اطلاعات گروه و شما
 
-owner
-🌟نشان دادن صاحب گروه
+🎈!admins
+نمایش ادمین های سوپر گروه
 
-modlist
-🌟نشان دادن مدهای گروه
+💢!owner
+نمایش صاحب گروه
 
-block
-🌟حذف یک کاربر ازسوپر گروه
-*افزودن به کاربر به لیست مسدود شده ها*
+🎈!modlist
+نمایش لیست مدیران
 
-ban
-🌟بن کردن فرد از گروه
+💢!bots
+نمایش لیست ربات های گروه
 
-unban
-🌟انبن کردن فرد از گروه
+🎈!who
+لیست تمامی اعضای گروه
 
-kickme
-🌟کیک کردن خودتا از سوپر گروه
-*باید توسط صاحب گروه انبلاک شوید یا با پیام جوین برگردید*
+💢!block
+اخراج فرد از سوپر گروه
+*اضافه شدن فرد به بلاک لیست*
 
-setowner
-🌟تنظیم صاحب گروه
+🎈!ban
+مسدود کردن فرد از سوپر گروه
 
-promote [username|id]
-🌟ارتقا یک فرد به مد
+💢!unban
+حذف مسدود فرد از سوپر گروه
 
-demote [username|id]
-🌟تنزل یک فرد به یوزر
+🎈!id
+نمایش ایدی سوپر گروه
+*برای نمایش ایدی یک یوزر: !id @username ویا ریپلای !id*
 
-setname
-🌟تنظیم نام گروه
+💢!id from
+دریافت ایدی فردی که پیام از او فوروارد شده
 
-setphoto
-🌟تنظیم عکس گروه
+🎈!kickme
+اخراج شما از سوپر گروه
+*Must be unblocked by owner or use join by pm to return*
 
-setrules
-🌟تنظیم قوانین گروه
+💢!setowner
+تنظیم صاحب گروه
 
-setabout
-🌟تنظیم درباره گروه(در لیست اعضا)
+🎈!promote [username|id]
+تنظیم مدیر برای سوپر گروه
 
-save [value] <text>
-🌟تنظیم متن برای مقداری خاص
+💢!demote [username|id]
+خذف ک مدیر از سوپر گروه
 
-get [value]
-🌟دریافت متن از ارسال مقدار
+🎈!setname
+تنظیم نام سوپر گروه و قفل آن
 
-link
-🌟دریافت لینک گروه
+💢!setphoto
+تنظیم عکس گروه و قفل آن
 
-rules
-🌟دریافت قوانین
+🎈!setrules
+تنظیم قوانین گروه
 
-lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|video|share|photo|join|gif|fwd|english|antiemoji|chat|audio|adstag|antifosh|strict]
-🌟قفل تنظیمات گروه
+💢!setabout
+تنظیم بیو در سوپر گروه
 
-unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|video|share|photo|join|gif|fwd|english|antiemoji|chat|audio|adstag|antifosh|strict]
-🌟بازکردن تنظیمات گروه
+🎈!save [value] <text>
+ذخیره در حافظه
 
-mute [all|audio|gifs|photo|video|service]
-🌟قفل مواد ارسالی کاربران
-*یک مواد موت شده باعث میشود آن مواد تنها حذف شود
+💢!get [value]
+نمایش متن ذخیره شده
 
-unmute [all|audio|gifs|photo|video|service]
-🌟بازکردن مواد ارسالی کاربران
+🎈!newlink
+ساخت لینک جدید (ربات باید سازنده گروه باشد)
 
-setflood [value]
-🌟تنظیم مقدار حساسیت اسپم
+💢!link
+نمایش لینک سوپر گروه
 
-settings
-🌟دریافت تنظیمات گروه
+🎈!rules
+نمایش قوانین سوپر گروه
 
-muteslist
-🌟دریافت مواد قفل شده در گروه
+💢!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+قفل برخی تنظیمات سوپر گروه
 
-muteuser [username]
-🌟خفه کردن یک فرد در گروه
 
-mutelist
-🌟دریافت لیست کاربران خفه شده
+🎈!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+باز کردن برخی تنظیمات سوپر گروه
 
-banlist
-🌟دریافت لیست بن شده گروه
 
-clean [rules|about|modlist|mutelist]
-🌟پاک کردن تنظیمات به طور کلی
+💢!mute [all|audio|gifs|photo|video|service]
+بی صدا کردن برخی رسانه ها در سوپر گروه
+*گزینه بی صدا شده در صورت قرار گرفتن در گروه پاک میشود
 
-date
-🌟دریافت تاریخ و ساعت
+🎈!unmute [all|audio|gifs|photo|video|service]
+با صدا کرد برخی رسانه ها در سوپر گروه
+*گزینه بی صدا شده در صورت قرار گرفتن در گروه پاک نمیشود
 
-write [text]
-🌟نوشتن متن به صورت های مختلف
+💢!setflood [value]
+تنظیم حساسیت به اسپم در سوپر گروه
 
-feedback [msg]
-🌟ارسال نظر شما به مدیران
+🎈!settings
+نمایش تنظیمات سوپر گروه
 
-map (loc/map/view/link/gps) [name]
-🌟دریافت نقشه محلی خاص
+💢!muteslist
+نمایش رسانه های بی صدا و باصدا
 
-weather [name]
-🌟نشان دادن اب هوای منطقه ای خاص
+🎈!muteuser [username]
+بی صدا کردن یک فرد
+*فرد بی صدا شده تمامی پیام هایش پاک میشود
+*فقط صاحب میتواند بی صدا کند/فقط مدیر و صاحب میتواند از حالت بی صدا در بیاورد
 
-web [link]
-🌟اسکرین شات از صفحه وب دلخواه
+💢!mutelist
+نمایس لیست افراد بی صدا
 
-aparat [name]
-🌟جستجو در آپارات
+🎈!banlist
+نمایش لیست افراد  بن شده
 
-addword
-🌟افزودن کلمه جدید به فیلترینگ
+💢!clean [rules|about|modlist|mutelist]
+پاک کردن قوانین/درباره/مدیران/لیست بی صدا
+🎈!del
+دلیت کردن یک پیام با ریپلای بر روی آن
 
-rmsg [num]
-🌟حذف پیام های چت{حداکثر 90عدد}
+💢!public [yes|no]
+تنظیم حالت گروه 
 
-sticker [text]
-🌟ساخت استیکر جدید با متن
+🎈!res [username]
+دریافت اطلاعات یک یوزرنیم
 
-sudoers
-🌟نشان دادن سودوهای بات
 
-tagall [msg]
-🌟صدا کردن تمامی افراد با تگ
+💢!log
+دریافت اطلاعات گروه
 
-vc [text]
-🌟تبدیل متنی به صدا
-addp
-adde
-🌟دعوت سودو اصلی
-🌟دعوت سودو دوم
+**میتوانید از "#", "!", or "/" اول همه دستورات استفاده کنید
 
-**تمامی دستورات بدون نیاز به "/"و"#"و"!" میباشد
-*صاحبان گروه تنها میتوانند دستورات اصلی را اجرا کنند
+*فقط ادمین میتونه استفاده کنه از دستورات kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about و settings 
 
-📚ربات مانستر ورژن 7.1📚
+*فقط صاحب میتواند از دستوات res, setowner, promote, demote, and log استفاده کند!
+
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -712,3 +678,4 @@ our_id = 0
 now = os.time()
 math.randomseed(now)
 started = false
+
