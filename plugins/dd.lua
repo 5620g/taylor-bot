@@ -1,4 +1,4 @@
---Begin supergrpup.lua
+@--Begin supergrpup.lua
 --Check members #Add supergroup
 local function check_member_super(cb_extra, success, result)
   local receiver = cb_extra.receiver
@@ -1075,7 +1075,7 @@ function show_supergroup_settingsmod(msg, target)
 	end
   
   local settings = data[tostring(target)]['settings']
-  local text = "⚙ تنظیمات سوپرگروه :\n\n🌟 قفل فروارد : 🔐\n🌟 قفل لینک : "..settings.lock_link.."\n🌟قفل ویدئو : "..settings.lock_video.."\n🌟قفل چت : "..settings.lock_chat.."\n🌟آنتی ایموجی  : "..settings.antiemoji.."\n🌟قفل انگلیسی : "..settings.lock_english.."\n🌟قفل گیف : "..settings.lock_gif.."\n🌟قفل چت : "..settings.lock_gif.."\n🌟قفل جوین : "..settings.lock_join.."\n🌟قفل عکس : "..settings.lock_ax.."\n🌟قفل اشتراک گذاری : "..settings.lock_share.."\n🌟انتی فحش : "..settings.antifosh.."\n🌟قفل تبلیغات : "..settings.lock_antiads.."\n🌟قفل تگ : "..settings.lock_adstag.."\n🌟قفل صدا : "..settings.lock_audio.."\n🌟قفل فلود : "..settings.flood.."\n🌟میزان حساسیت اسپم : "..NUM_MSG_MAX.."\n🌟قفل اسپم : "..settings.lock_spam.."\n🌟قفل عربی و فارسی : "..settings.lock_arabic.."\n🌟قفل اعضا : "..settings.lock_member.."\n🌟قفل کارکتر آر تی ال : "..settings.lock_rtl.."\n🌟قفل ورود خروج ها : "..settings.lock_tgservice.."\n🌟 قفل استیکر : "..settings.lock_sticker.."\n🌟عمومی بودن گروه : "..settings.public.."\n🌟قفل تنظیمات سختگیرانه : "..settings.strict
+  local text = "____________________\n⚙تنظیمات گروه⚙:⬇️\n➖➖➖➖➖➖➖➖➖➖\n>🔒لینک : "..settings.lock_link.."\n>🔒 شماره: "..settings.lock_contacts.."\n>🔒 فلوت: "..settings.flood.."\n>سطح فلوت : "..NUM_MSG_MAX.."\n>🔒 اسپم: "..settings.lock_spam.."\n>🔒 عربی: "..settings.lock_arabic.."\n>🔒 ممبر: "..settings.lock_member.."\n>🔒 آر تی ال: "..settings.lock_rtl.."\n>🔒 تگ سرور: "..settings.lock_tgservice.."\n>🔒 استیکر: "..settings.lock_sticker.."\n>🔒 تگ(#): "..settings.tag.."\n>🔒 شکلک: "..settings.emoji.."\n>🔒 اینگلیسی : "..settings.english.."\n>🔒 فروارد: "..settings.fwd.."\n>🔒 ریپلی: "..settings.reply.."\n>🔒 جواین: "..settings.join.."\n>🔒 ایدی (@): "..settings.username.."\n>🔒 رسانه : "..settings.media.."\n>🔒 فحش: "..settings.fosh.."\n>🔒 لفت دادن: "..settings.leave.."\n>🔒 ادد کردن ربات: "..bots_protection.."\n>🔒 اپراتور: "..settings.operator.."\n〰〰〰〰〰〰〰〰\n⚙آسان شیرین و سوئیچ سریع تر⚙:⬇️\n〰〰〰〰〰〰〰〰\n>💹تغییر مدل اتحاد 💹: "..settings.etehad.."\n>🔒 همه : "..settings.all.."\n➖➖➖➖➖➖➖➖➖➖\nℹ️درباره گروهℹ️:⬇️\n➖➖➖➖➖➖➖➖➖➖\n>نوع گروه📃: "..gp_type.."\n>گروه عمومیه؟: "..settings.public.."\n>⚙تنظیمات سخت گیرانه⚙: "..settings.strict.."\n➰➰➰➰➰➰➰➰➰\n>>نسخه ربات  : v2.9<<\n>>>👑monsterTGBOT👑<<<\n>>@TEAM_MONSTER<<"
   return text
 end
 
@@ -1829,7 +1829,7 @@ local function run(msg, matches)
 				return "شما میتوانید بادستور[لینک جدید]لینک جدید بسازید"
 			end
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-			return "نام گروه:[" ..string.gsub(msg.to.print_name, "_", " ").. "]\nلینک سوپرگروه:\n"..group_link.."\n@Part_Team"
+			return "نام گروه:[" ..string.gsub(msg.to.print_name, "_", " ").. "]\nلینک سوپرگروه:\n"..group_link.."\n@GROUP_SHIELD_TEAM"
 		end
 
 		if matches[1] == "invite" and is_sudo(msg) then
@@ -2814,4 +2814,4 @@ return {
   pre_process = pre_process
 }
 --End supergroupfa.lua
---by @Part_Team
+--by @GROUP_SHIELD_TEAM
